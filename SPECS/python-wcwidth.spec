@@ -2,7 +2,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.2.5
-Release:        7%{?dist}
+Release:        8%{?dist}
 Summary:        Measures number of Terminal column cells of wide-character codes
 
 License:        MIT
@@ -42,6 +42,10 @@ printable width of a string on a Terminal.
 %{python3_sitelib}/%{pypi_name}-%{version}-py%{python3_version}.egg-info
 
 %changelog
+* Fri Jun 03 2022 Bryan Gurney <bgurney@redhat.com> - 0.2.5-8
+- Rebuild after move into AppStream
+- Related: rhbz#2066456
+
 * Tue Feb 08 2022 Tomáš Hrnčiar <thrnciar@redhat.com> - 0.2.5-7
 - Add automatically generated Obsoletes tag with the python39- prefix
   for smoother upgrade from RHEL8
